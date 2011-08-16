@@ -1,5 +1,5 @@
 module BestInPlace
-  module BestInPlaceHelpers
+  module Helpers
     def best_in_place(object, field, opts = {})
       opts[:type] ||= :input
       opts[:collection] ||= []
@@ -40,4 +40,3 @@ module BestInPlace
     end
   end
 end
-
