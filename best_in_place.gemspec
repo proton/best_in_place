@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version = "0.1.9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Bernat Farrero}, %q{Indrek Juhkam}, %q{moabite}, %q{Troy Anderson}, %q{solutus}, %q{Peter Savichev (proton)}]
+  s.authors = [%q{Bernat Farrero}, %q{Roger Campos}, %q{Jack Senechal}, %q{Indrek Juhkam}, %q{moabite}, %q{Troy Anderson}, %q{solutus}, %q{Peter Savichev (proton)}]
   s.date = %q{2011-10-05}
   s.description = %q{BestInPlace is a jQuery script and a Rails 3 helper that provide the method best_in_place to display any object field easily editable for the user by just clicking on it. It supports input data, text data, boolean data and custom dropdown data. It works with RESTful controllers.}
   s.email = %q{bernat@itnig.net}

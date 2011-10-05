@@ -24,7 +24,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %q{It makes any field in place editable by clicking on it, it works for inputs, textareas, select dropdowns and checkboxes}
   gem.description = %q{BestInPlace is a jQuery script and a Rails 3 helper that provide the method best_in_place to display any object field easily editable for the user by just clicking on it. It supports input data, text data, boolean data and custom dropdown data. It works with RESTful controllers.}
   gem.email = "bernat@itnig.net"
-  gem.authors = ["Bernat Farrero", "Indrek Juhkam", "moabite", "Troy Anderson", "solutus", "Peter Savichev (proton)"]
+  gem.authors = ["Bernat Farrero", "Roger Campos", "Jack Senechal", "Indrek Juhkam", "moabite", "Troy Anderson", "solutus", "Peter Savichev (proton)"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

@@ -30,6 +30,13 @@ The editor works by PUTting the updated value to the server and GETting the upda
 
 ##Usage of Rails 3 Gem
 
+To be able to use the script the following block must be added as well:
+
+    $(document).ready(function() {
+      /* Activating Best In Place */
+      jQuery(".best_in_place").best_in_place()
+    });
+
 **best_in_place object, field, OPTIONS**
 
 Params:
@@ -119,21 +126,31 @@ When the user tries to introduce invalid data, the error messages defined in the
 
 ---
 
-##Installation
+## Installation
 
 First add it to your Gemfile:
+
     gem "best_in_place"
+
+### Rails 3.1
 
 It works by simply adding it to your application.js
     //= require jquery
     //= require best_in_place
 
-To be able to use the script the following block must be added as well:
+### Rails 3.0
 
-    $(document).ready(function() {
-      /* Activating Best In Place */
-      jQuery(".best_in_place").best_in_place()
-    });
+It works by simply copying and loading the files from the folder **/public/javascripts** to your application and loading them in your layouts
+in the following order:
+
+- jquery-1.4.4.js
+- jquery.purr.js
+- **best_in_place.js**
+
+The last one you can copy it (and keeping up to date to the last version) by running the following generator in your application's root.
+Remember to do it every time you update the gem (or you will see no change).
+
+    rails g best_in_place:setup
 
 ----
 
@@ -168,4 +185,6 @@ If the script is used with the Rails Gem no html tags will be allowed unless the
 
 Code by [Bernat Farrero](http://bernatfarrero.com) from [Itnig Web Services](http://itnig.net) (it was based on the [original project](http://github.com/janv/rest_in_place/) of Jan Varwig) and released under [MIT license](http://www.opensource.org/licenses/mit-license.php).
 
-Many thanks to the contributors: [Roger Campos](http://github.com/rogercampos) and [Jack Senechal](https://github.com/jacksenechal)
+Many thanks to the contributors: [Roger Campos](http://github.com/rogercampos), [Jack Senechal](https://github.com/jacksenechal), [Indrek Juhkam](https://github.com/indrekj), [moabite](https://github.com/moabite), [Troy Anderson](https://github.com/troya2), [solutus](https://github.com/solutus) and [Peter Savichev (proton)](https://github.com/proton)
+
+  gem.authors = ["Bernat Farrero", "Roger Campos", "Jack Senechal", "Indrek Juhkam", "moabite", "Troy Anderson", "solutus"
